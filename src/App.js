@@ -7,8 +7,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <RedocStandalone options={{
+      {/* https://github.com/Redocly/redoc#redoc-options-object */}
+        <RedocStandalone options={{ 
           nativeScrollbars: true,
+          hideDownloadButtonl:true,
+          disableSearch: true,
           theme: { colors: { primary: { main: '#1890ff' } } },
         }} specUrl="/swagger.json" />
       </div>
